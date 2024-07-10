@@ -6,5 +6,6 @@ package com.zhy.springframework.beans.factory.config;
  * @Date 2024/7/9 16:56
  * @Created by Shinelon
  */
-public class SingletonBeanRegistry {
+public interface SingletonBeanRegistry {
+    Object getSingleton(String beanName);
 }

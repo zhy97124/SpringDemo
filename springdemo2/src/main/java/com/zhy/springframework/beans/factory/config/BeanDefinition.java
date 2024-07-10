@@ -6,14 +6,19 @@ package com.zhy.springframework.beans.factory.config;
  * @Date 2024/7/9 16:35
  * @Created by Shinelon
  */
+@SuppressWarnings("rawtypes")
 public class BeanDefinition {
-    private Object bean;
+    private Class beanClass;
 
-    public BeanDefinition(Object bean) {
-        this.bean = bean;
+    public BeanDefinition(Class beanClass) {
+        this.beanClass = beanClass;
     }
 
-    public Object getBean() {
-        return bean;
+    public Class getBeanClass() {
+        return beanClass;
+    }
+
+    public void setBeanClass(Class beanClass) {
+        this.beanClass = beanClass;
     }
 }
