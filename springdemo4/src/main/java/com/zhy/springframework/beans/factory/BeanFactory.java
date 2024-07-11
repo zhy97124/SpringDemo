@@ -1,10 +1,6 @@
-package com.zhy.springframework.beans;
+package com.zhy.springframework.beans.factory;
 
-import com.zhy.springframework.BeansException;
-import com.zhy.springframework.beans.factory.config.BeanDefinition;
-
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+import com.zhy.springframework.beans.BeansException;
 
 /**
  * @Description TODO 注册bean
@@ -17,5 +13,5 @@ public interface BeanFactory {
     Object getBean(String name)throws BeansException;
 
     Object getBean(String name,Object... args) throws BeansException;
-
+    <T> T getBean(String name, Class<T> requiredType) throws BeansException;
 }

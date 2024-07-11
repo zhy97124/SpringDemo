@@ -1,7 +1,7 @@
 package com.zhy.springframework.beans.factory.config;
 
 
-import com.zhy.springframework.PropertyValues;
+import com.zhy.springframework.beans.PropertyValues;
 
 /**
  * @Description TODO 定义bean

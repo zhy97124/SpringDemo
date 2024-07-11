@@ -1,9 +1,8 @@
 package com.zhy.springframework.beans.factory.support;
 
-import com.zhy.springframework.BeansException;
-import com.zhy.springframework.beans.BeanFactory;
+import com.zhy.springframework.beans.BeansException;
+import com.zhy.springframework.beans.factory.BeanFactory;
 import com.zhy.springframework.beans.factory.config.BeanDefinition;
-import javafx.beans.binding.ObjectExpression;
 
 /**
  * @Description TODO
@@ -21,6 +20,11 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry i
     @Override
     public Object getBean(String name, Object... args) throws BeansException {
         return doGetBean(name, args);
+    }
+
+    @Override
+    public <T> T getBean(String name, Class<T> requiredType) throws BeansException {
+        return (T) getBean(name);
     }
 
     protected <T> T doGetBean(final String name, final Object[] args) {

@@ -1,4 +1,4 @@
-package com.zhy.springframework;
+package com.zhy.springframework.beans;
 
 /**
  * @Description TODO

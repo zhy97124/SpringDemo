@@ -1,5 +1,7 @@
-package com.zhy.springframework;
+package com.zhy.springframework.beans;
 
+
+import com.zhy.springframework.beans.PropertyValue;
 
 import java.util.ArrayList;
 import java.util.List;
