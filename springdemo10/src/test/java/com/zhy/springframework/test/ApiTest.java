@@ -1,7 +1,7 @@
 package com.zhy.springframework.test;
 
 import com.zhy.springframework.context.support.ClassPathXmlApplicationContext;
-import com.zhy.springframework.test.bean.IUserService;
+import com.zhy.springframework.test.bean2.IUserService;
 import org.junit.Test;
 
 /**

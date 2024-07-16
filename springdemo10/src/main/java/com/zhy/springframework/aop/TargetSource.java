@@ -14,12 +14,7 @@ public class TargetSource {
     }
 
     /**
-     * Return the type of targets returned by this {@link TargetSource}.
-     * <p>Can return <code>null</code>, although certain usages of a
-     * <code>TargetSource</code> might just work with a predetermined
-     * target class.
-     *
-     * @return the type of targets returned by this {@link TargetSource}
+     *返回由{@link TargetSource}返回的目标类型。
      */
     public Class<?>[] getTargetClass() {
         Class<?> clazz = this.target.getClass();
@@ -28,11 +23,7 @@ public class TargetSource {
     }
 
     /**
-     * Return a target instance. Invoked immediately before the
-     * AOP framework calls the "target" of an AOP method invocation.
-     *
-     * @return the target object, which contains the joinpoint
-     * @throws Exception if the target object can't be resolved
+     *返回目标实例。紧接在AOP框架调用AOP方法调用的“目标”。
      */
     public Object getTarget() {
         return this.target;

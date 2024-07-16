@@ -16,8 +16,7 @@ import java.util.Collection;
 
 /**
  * BeanPostProcessor 实现，它基于所有候选者创建 AOP 代理
- * 当前 BeanFactory 的顾问。此类是完全泛型的;它包含
- * 没有特殊代码来处理任何特定方面，例如池化方面。
+ * 当前 BeanFactory 的顾问。此类是完全泛型的;它包含没有特殊代码来处理任何特定方面，例如池化方面。
  */
 public class DefaultAdvisorAutoProxyCreator implements InstantiationAwareBeanPostProcessor, BeanFactoryAware {
 

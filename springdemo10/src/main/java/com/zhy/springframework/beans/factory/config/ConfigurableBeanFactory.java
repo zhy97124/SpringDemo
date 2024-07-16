@@ -22,17 +22,15 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
     void destroySingletons();
 
     /**
-     * Add a String resolver for embedded values such as annotation attributes.
-     * @param valueResolver the String resolver to apply to embedded values
-     * @since 3.0
+     * 为嵌入值(如注释属性)添加字符串解析器。
+     * @param valueResolver 用于嵌入值的字符串解析器
      */
     void addEmbeddedValueResolver(StringValueResolver valueResolver);
 
     /**
-     * Resolve the given embedded value, e.g. an annotation attribute.
-     * @param value the value to resolve
-     * @return the resolved value (may be the original value as-is)
-     * @since 3.0
+     * 解析给定的内嵌值，例如注释属性。
+     * @param value 要解析的值
+     * @return (可能是原始值)
      */
     String resolveEmbeddedValue(String value);
 
