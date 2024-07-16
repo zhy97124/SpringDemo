@@ -3,15 +3,8 @@ package com.zhy.springframework.beans.factory.annotation;
 import java.lang.annotation.*;
 
 /**
- * Annotation at the field or method/constructor parameter level
- * that indicates a default value expression for the affected argument.
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ *字段或方法/构造函数参数级别的注解
+ * 表示受影响参数的默认值表达式。
  */
 @Target({ElementType.FIELD, ElementType.METHOD, ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)

@@ -6,15 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Marks a constructor, field, setter method or config method as to be
- * autowired by Spring's dependency injection facilities.
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 自动注入注解
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD})

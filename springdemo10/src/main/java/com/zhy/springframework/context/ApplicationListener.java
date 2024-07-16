@@ -3,16 +3,9 @@ package com.zhy.springframework.context;
 import java.util.EventListener;
 
 /**
- * Interface to be implemented by application event listeners.
- * Based on the standard <code>java.util.EventListener</code> interface
- * for the Observer design pattern.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 由应用程序事件侦听器实现的接口。
+ * 基于标准的 <code>java.util.EventListener</code> 接口
+ * 用于 Observer 设计模式。
  */
 public interface ApplicationListener<E extends ApplicationEvent> extends EventListener {
 

@@ -1,17 +1,9 @@
 package com.zhy.springframework.beans.factory;
 
 /**
- * Interface to be implemented by beans that want to release resources
- * on destruction. A BeanFactory is supposed to invoke the destroy
- * method if it disposes a cached singleton. An application context
- * is supposed to dispose all of its singletons on close.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 接口由想要释放资源的 Bean 实现
+ * 关于销毁。BeanFactory 应该调用 destroy方法，如果它释放了缓存的单例。应用程序上下文
+ * 应该在关闭时处理其所有单例。
  */
 public interface DisposableBean {
 

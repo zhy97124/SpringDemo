@@ -8,15 +8,8 @@ import cn.hutool.core.util.StrUtil;
 import java.lang.reflect.Method;
 
 /**
- * Adapter that implements the {@link DisposableBean} and {@link Runnable} interfaces
- * performing various destruction steps on a given bean instance:
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 实现 {@link DisposableBean} 和 {@link Runnable} 接口的适配器
+ * 在给定的 Bean 实例上执行各种销毁步骤：
  */
 public class DisposableBeanAdapter implements DisposableBean {
 

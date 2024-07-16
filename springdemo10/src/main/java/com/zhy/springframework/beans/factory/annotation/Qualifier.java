@@ -3,16 +3,8 @@ package com.zhy.springframework.beans.factory.annotation;
 import java.lang.annotation.*;
 
 /**
- * This annotation may be used on a field or parameter as a qualifier for
- * candidate beans when autowiring. It may also be used to annotate other
- * custom annotations that can then in turn be used as qualifiers.
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 自动接线时的候选 bean。它也可以用来注释其他
+ * 自定义注释，然后可以用作限定符。
  */
 @Target({ElementType.FIELD, ElementType.METHOD, ElementType.PARAMETER, ElementType.TYPE, ElementType.ANNOTATION_TYPE})
 @Retention(RetentionPolicy.RUNTIME)

@@ -5,14 +5,7 @@ import com.zhy.springframework.core.io.Resource;
 import com.zhy.springframework.core.io.ResourceLoader;
 
 /**
- * Simple interface for bean definition readers.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ *Bean 定义读取器的简单界面。
  */
 public interface BeanDefinitionReader {
 

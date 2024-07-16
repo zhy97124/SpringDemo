@@ -1,18 +1,9 @@
 package com.zhy.springframework.beans.factory;
 
 /**
- * Interface to be implemented by objects used within a {@link BeanFactory}
- * which are themselves factories. If a bean implements this interface,
- * it is used as a factory for an object to expose, not directly as a bean
- * instance that will be exposed itself.
- * @param <T>
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 由 {@link BeanFactory} 中使用的对象实现的接口
+ * 本身就是工厂。如果一个 Bean 实现了这个接口，
+ * 它被用作对象暴露的工厂，而不是直接作为 bean将自行公开的实例。
  */
 public interface FactoryBean<T> {
 

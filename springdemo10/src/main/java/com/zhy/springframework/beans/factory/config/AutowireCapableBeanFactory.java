@@ -4,10 +4,8 @@ import com.zhy.springframework.beans.BeansException;
 import com.zhy.springframework.beans.factory.BeanFactory;
 
 /**
- * Extension of the {@link BeanFactory}
- * interface to be implemented by bean factories that are capable of
- * autowiring, provided that they want to expose this functionality for
- * existing bean instances.
+ * {@link BeanFactory} 的扩展
+ * 能够自动接线，前提是他们想要公开此功能现有 Bean 实例。
  */
 public interface AutowireCapableBeanFactory extends BeanFactory {
 

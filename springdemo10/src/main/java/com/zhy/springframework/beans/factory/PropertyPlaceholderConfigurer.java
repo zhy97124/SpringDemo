@@ -13,16 +13,9 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * Allows for configuration of individual bean property values from a property resource,
- * i.e. a properties file. Useful for custom config files targeted at system
- * administrators that override bean properties configured in the application context.
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 允许从属性资源配置单个 Bean 属性值，
+ * 即属性文件。对于针对系统的自定义配置文件很有用
+ * 覆盖在应用程序上下文中配置的 Bean 属性的管理员。
  */
 public class PropertyPlaceholderConfigurer implements BeanFactoryPostProcessor {
 

@@ -1,8 +1,6 @@
 package com.zhy.springframework.beans.factory.config;
 
 /**
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
- *
  * Bean 的引用
  */
 public class BeanReference {

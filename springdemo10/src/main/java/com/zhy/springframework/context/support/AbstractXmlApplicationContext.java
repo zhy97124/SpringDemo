@@ -5,16 +5,8 @@ import com.zhy.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import com.zhy.springframework.context.ApplicationContext;
 
 /**
- * Convenient base class for {@link ApplicationContext}
- * implementations, drawing configuration from XML documents containing bean definitions
- * understood by an {@link XmlBeanDefinitionReader}.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 方便的 {@link ApplicationContext} 基类
+ * 实现，从包含 Bean 定义的 XML 文档中绘制配置由 {@link XmlBeanDefinitionReader} 理解。
  */
 public abstract class AbstractXmlApplicationContext extends AbstractRefreshableApplicationContext {
 

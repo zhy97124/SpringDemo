@@ -4,17 +4,7 @@ import com.zhy.springframework.context.ApplicationEvent;
 import com.zhy.springframework.context.ApplicationListener;
 
 /**
- * Interface to be implemented by objects that can manage a number of
- * {@link ApplicationListener} objects, and publish events to them.
- *
  * 事件广播器
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
  */
 public interface ApplicationEventMulticaster {
 

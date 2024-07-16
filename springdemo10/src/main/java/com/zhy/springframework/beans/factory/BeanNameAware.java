@@ -1,18 +1,8 @@
 package com.zhy.springframework.beans.factory;
 
 /**
- * Interface to be implemented by beans that want to be aware of their
- * bean name in a bean factory. Note that it is not usually recommended
- * that an object depend on its bean name, as this represents a potentially
- * brittle dependence on external configuration, as well as a possibly
- * unnecessary dependence on a Spring API.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 由想要了解其 Bean 实现的接口豆类工厂中的豆类名称。请注意，通常不建议这样做
+ * 一个对象依赖于它的 Bean 名称，因为这表示一个潜在的脆性依赖于外部配置，以及可能对 Spring API 的不必要依赖。
  */
 public interface BeanNameAware extends Aware {
 

@@ -13,19 +13,7 @@ import com.zhy.springframework.beans.factory.config.BeanPostProcessor;
 import java.lang.reflect.Field;
 
 /**
- * {@link BeanPostProcessor} implementation
- * that autowires annotated fields, setter methods and arbitrary config methods.
- * Such members to be injected are detected through a Java 5 annotation: by default,
- * Spring's {@link Autowired @Autowired} and {@link Value @Value} annotations.
- * <p>
  * 处理 @Value、@Autowired，注解的 BeanPostProcessor
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
  */
 public class AutowiredAnnotationBeanPostProcessor implements InstantiationAwareBeanPostProcessor, BeanFactoryAware {
 

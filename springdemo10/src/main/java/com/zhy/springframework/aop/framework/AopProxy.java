@@ -1,21 +1,9 @@
 package com.zhy.springframework.aop.framework;
 
 /**
- * Delegate interface for a configured AOP proxy, allowing for the creation
- * of actual proxy objects.
- *
- * <p>Out-of-the-box implementations are available for JDK dynamic proxies
- * and for CGLIB proxies, as applied by DefaultAopProxyFactory
- *
+ *已配置的 AOP 代理的委托接口，允许创建实际代理对象。开箱即用的实现可用于 JDK 动态代理
+ * 以及 DefaultAopProxyFactory 应用的 CGLIB 代理
  * AOP 代理的抽象
- *
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
  */
 public interface AopProxy {
 

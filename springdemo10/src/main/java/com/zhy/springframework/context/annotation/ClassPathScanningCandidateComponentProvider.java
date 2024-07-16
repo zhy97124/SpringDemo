@@ -8,15 +8,7 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
- * A component provider that scans the classpath from a base package. It then
- * applies exclude and include filters to the resulting classes to find candidates.
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 从基本包扫描类路径的组件提供程序。然后将筛选器、排除和包含筛选器应用于生成的类以查找候选者。
  */
 public class ClassPathScanningCandidateComponentProvider {
 

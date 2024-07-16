@@ -5,10 +5,6 @@ import com.zhy.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author VictorG
- * @date 2023/3/6 0:16
- */
 @Component
 public class UserDao {
 

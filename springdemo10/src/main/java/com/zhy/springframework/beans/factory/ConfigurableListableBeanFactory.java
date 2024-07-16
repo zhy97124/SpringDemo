@@ -6,16 +6,9 @@ import com.zhy.springframework.beans.factory.config.BeanDefinition;
 import com.zhy.springframework.beans.factory.config.ConfigurableBeanFactory;
 
 /**
- * Configuration interface to be implemented by most listable bean factories.
- * In addition to {@link ConfigurableBeanFactory}, it provides facilities to
- * analyze and modify bean definitions, and to pre-instantiate singletons.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 由大多数可列出的 Bean 工厂实现的配置接口。
+ * 除了 {@link ConfigurableBeanFactory} 之外，它还提供了以下功能
+ * 分析和修改 Bean 定义，并预先实例化单例。
  */
 public interface ConfigurableListableBeanFactory extends ListableBeanFactory, AutowireCapableBeanFactory, ConfigurableBeanFactory {
 

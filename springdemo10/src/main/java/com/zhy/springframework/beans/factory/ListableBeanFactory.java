@@ -5,18 +5,10 @@ import com.zhy.springframework.beans.BeansException;
 import java.util.Map;
 
 /**
- * Extension of the {@link BeanFactory} interface to be implemented by bean factories
- * that can enumerate all their bean instances, rather than attempting bean lookup
- * by name one by one as requested by clients. BeanFactory implementations that
- * preload all their bean definitions (such as XML-based factories) may implement
- * this interface.
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 由 Bean 工厂实现的 {@link BeanFactory} 接口的扩展
+ * 可以枚举其所有 Bean 实例，而不是尝试 Bean 查找
+ * 根据客户要求逐一命名。BeanFactory 实现
+ * 预加载所有 Bean 定义（例如基于 XML 的工厂）可能实现此接口。
  */
 public interface ListableBeanFactory extends BeanFactory{
 

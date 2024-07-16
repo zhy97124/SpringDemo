@@ -10,7 +10,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 默认单例bean的注册
  */
 public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
 

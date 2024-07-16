@@ -3,17 +3,9 @@ package com.zhy.springframework.aop;
 import org.aopalliance.aop.Advice;
 
 /**
- * Base interface holding AOP <b>advice</b> (action to take at a joinpoint)
- * and a filter determining the applicability of the advice (such as
- * a pointcut). <i>This interface is not for use by Spring users, but to
- * allow for commonality in support for different types of advice.</i>
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 保存 AOP advice的基本接口（在连接点时要执行的操作）
+ * 以及确定建议适用性的过滤器（例如一个点切）。
+ * 此接口不是供 Spring 用户使用的，而是用于允许支持不同类型建议的共性
  */
 public interface Advisor {
 

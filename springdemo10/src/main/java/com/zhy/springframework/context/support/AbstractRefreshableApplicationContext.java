@@ -6,18 +6,10 @@ import com.zhy.springframework.beans.factory.support.DefaultListableBeanFactory;
 import com.zhy.springframework.context.ApplicationContext;
 
 /**
- * Base class for {@link ApplicationContext}
- * implementations which are supposed to support multiple calls to {@link #refresh()},
- * creating a new internal bean factory instance every time.
- * Typically (but not necessarily), such a context will be driven by
- * a set of config locations to load bean definitions from.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * {@link ApplicationContext} 的基类
+ * 应该支持对 {@link #refresh（）} 的多次调用的实现，
+ * 每次创建一个新的内部 Bean 工厂实例。
+ * 通常（但不一定），这样的上下文将由一组用于加载 Bean 定义的配置位置。
  */
 public abstract class AbstractRefreshableApplicationContext extends AbstractApplicationContext {
 

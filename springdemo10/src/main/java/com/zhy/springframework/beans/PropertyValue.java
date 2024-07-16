@@ -1,8 +1,6 @@
 package com.zhy.springframework.beans;
 
 /**
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
- *
  * bean 属性信息
  */
 public class PropertyValue {

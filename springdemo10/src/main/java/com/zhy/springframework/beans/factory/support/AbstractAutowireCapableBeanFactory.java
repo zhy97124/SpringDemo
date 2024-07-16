@@ -12,17 +12,10 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
 /**
- * Abstract bean factory superclass that implements default bean creation,
- * with the full capabilities specified by the class.
- * Implements the {@link AutowireCapableBeanFactory}
- * interface in addition to AbstractBeanFactory's {@link #createBean} method.
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ *实现默认 Bean 创建的抽象 Bean 工厂超类，
+ *具有类指定的全部功能。
+ *实现 {@link AutowireCapableBeanFactory}
+ *除了 AbstractBeanFactory 的 {@link #createBean} 方法之外的接口。
  */
 public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory implements AutowireCapableBeanFactory {
 

@@ -4,14 +4,7 @@ import com.zhy.springframework.context.ApplicationContext;
 import com.zhy.springframework.context.ApplicationEvent;
 
 /**
- * Base class for events raised for an <code>ApplicationContext</code>.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 为 <code>ApplicationContext</code> 引发的事件的基类。
  */
 public class ApplicationContextEvent extends ApplicationEvent {
 

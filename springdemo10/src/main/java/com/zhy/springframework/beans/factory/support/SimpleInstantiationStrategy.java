@@ -7,7 +7,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ *简单实例化策略
  */
 public class SimpleInstantiationStrategy implements InstantiationStrategy {
 

@@ -3,14 +3,7 @@ package com.zhy.springframework.aop;
 import java.lang.reflect.Method;
 
 /**
- * Part of a {@link Pointcut}: Checks whether the target method is eligible for advice.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 检查目标方法是否符合建议条件。
  */
 public interface MethodMatcher {
 

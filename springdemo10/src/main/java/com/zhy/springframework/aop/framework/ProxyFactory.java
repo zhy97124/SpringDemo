@@ -3,16 +3,7 @@ package com.zhy.springframework.aop.framework;
 import com.zhy.springframework.aop.AdvisedSupport;
 
 /**
- * Factory for AOP proxies for programmatic use, rather than via a bean
- * factory. This class provides a simple way of obtaining and configuring
- * AOP proxies in code.
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 用于编程使用的 AOP 代理工厂，而不是通过 Bean厂。此类提供了一种获取和配置的简单方法代码中的 AOP 代理。
  */
 public class ProxyFactory {
 

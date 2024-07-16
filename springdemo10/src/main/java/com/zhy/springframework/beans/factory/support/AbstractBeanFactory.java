@@ -12,8 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
- * <p>
  * BeanDefinition注册表接口
  */
 public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport implements ConfigurableBeanFactory {

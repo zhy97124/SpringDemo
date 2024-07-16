@@ -5,14 +5,7 @@ import com.zhy.springframework.aop.PointcutAdvisor;
 import org.aopalliance.aop.Advice;
 
 /**
- * Spring AOP Advisor that can be used for any AspectJ pointcut expression.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 可用于任何切面切入点表达式。
  */
 public class AspectJExpressionPointcutAdvisor implements PointcutAdvisor {
 

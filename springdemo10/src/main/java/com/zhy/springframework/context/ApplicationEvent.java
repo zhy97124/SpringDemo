@@ -3,15 +3,7 @@ package com.zhy.springframework.context;
 import java.util.EventObject;
 
 /**
- * Class to be extended by all application events. Abstract as it
- * doesn't make sense for generic events to be published directly.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 所有应用程序事件都要扩展的类。抽象如其分直接发布通用事件没有意义。
  */
 public abstract class ApplicationEvent extends EventObject {
 

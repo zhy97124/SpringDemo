@@ -3,16 +3,7 @@ package com.zhy.springframework.aop;
 import org.aopalliance.intercept.MethodInterceptor;
 
 /**
- * Base class for AOP proxy configuration managers.
- * These are not themselves AOP proxies, but subclasses of this class are
- * normally factories from which AOP proxy instances are obtained directly.
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * AOP 代理配置管理器的基类。这些本身不是 AOP 代理，但此类的子类是通常为直接获取 AOP 代理实例的工厂。
  */
 public class AdvisedSupport {
 

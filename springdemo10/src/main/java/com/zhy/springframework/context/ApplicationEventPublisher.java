@@ -1,17 +1,7 @@
 package com.zhy.springframework.context;
 
 /**
- * Interface that encapsulates event publication functionality.
- * Serves as super-interface for ApplicationContext.
- *
  * 事件发布者接口
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
  */
 public interface ApplicationEventPublisher {
 

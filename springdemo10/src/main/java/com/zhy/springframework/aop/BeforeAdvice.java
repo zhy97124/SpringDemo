@@ -3,14 +3,7 @@ package com.zhy.springframework.aop;
 import org.aopalliance.aop.Advice;
 
 /**
- * Common marker interface for before advice, such as {@link MethodBeforeAdvice}.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 建议前的通用标记界面
  */
 public interface BeforeAdvice extends Advice {
 

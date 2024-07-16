@@ -3,17 +3,8 @@ package com.zhy.springframework.context;
 import com.zhy.springframework.beans.BeansException;
 
 /**
- * SPI interface to be implemented by most if not all application contexts.
- * Provides facilities to configure an application context in addition
- * to the application context client methods in the
- * {@link ApplicationContext} interface.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * SPI接口可由大多数（如果不是全部）应用程序上下文实现。
+ * 此外，还提供配置应用程序上下文的功能到应用程序上下文客户端方法中{@link ApplicationContext} 接口。
  */
 public interface ConfigurableApplicationContext extends ApplicationContext {
 

@@ -5,16 +5,8 @@ import com.zhy.springframework.beans.PropertyValues;
 import com.zhy.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor;
 
 /**
- * Subinterface of {@link BeanPostProcessor} that adds a before-instantiation callback,
- * and a callback after instantiation but before explicit properties are set or
- * autowiring occurs.
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * {@link BeanPostProcessor} 的子接口，用于添加实例化前的回调，
+ *  和实例化之后但在设置显式属性之前的回调，或者发生自动接线。
  */
 public interface InstantiationAwareBeanPostProcessor extends BeanPostProcessor {
 

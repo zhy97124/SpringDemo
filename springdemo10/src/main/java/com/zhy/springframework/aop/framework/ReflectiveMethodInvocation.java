@@ -6,16 +6,8 @@ import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Method;
 
 /**
- * <p>Invokes the target object using reflection. Subclasses can override the
- * #invokeJoinpoint() method to change this behavior, so this is also
- * a useful base class for more specialized MethodInvocation implementations.
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 使用反射调用目标对象。子类可以覆盖#invokeJoinpoint（） 方法改变这个行为，所以这也是
+ * 用于更专业的 MethodInvocation 实现的有用基类。
  */
 public class ReflectiveMethodInvocation implements MethodInvocation {
 

@@ -5,9 +5,7 @@ import com.zhy.springframework.beans.factory.config.BeanPostProcessor;
 import com.zhy.springframework.context.ApplicationContext;
 import com.zhy.springframework.context.ApplicationContextAware;
 
-/**
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
- */
+
 public class ApplicationContextAwareProcessor implements BeanPostProcessor {
 
     private final ApplicationContext applicationContext;

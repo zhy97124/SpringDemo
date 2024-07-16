@@ -1,15 +1,7 @@
 package com.zhy.springframework.aop;
 
 /**
- * Filter that restricts matching of a pointcut or introduction to
- * a given set of target classes.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 限制切入点或引入与一组给定目标类的匹配的筛选器。
  */
 public interface ClassFilter {
 

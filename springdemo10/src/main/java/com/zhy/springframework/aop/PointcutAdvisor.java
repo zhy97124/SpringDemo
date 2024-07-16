@@ -1,16 +1,9 @@
 package com.zhy.springframework.aop;
 
 /**
- * Superinterface for all Advisors that are driven by a pointcut.
- * This covers nearly all advisors except introduction advisors,
- * for which method-level matching doesn't apply.
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 所有由切点驱动的顾问的超级接口。
+ * 这几乎涵盖了除介绍顾问之外的所有顾问，
+ * 方法级匹配不适用。
  */
 public interface PointcutAdvisor extends Advisor {
 

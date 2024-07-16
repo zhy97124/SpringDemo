@@ -3,7 +3,7 @@ package com.zhy.springframework.beans.factory.config;
 import com.zhy.springframework.beans.PropertyValues;
 
 /**
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * Bean的定义
  */
 public class BeanDefinition {
 

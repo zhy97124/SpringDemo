@@ -9,16 +9,8 @@ import cn.hutool.core.util.StrUtil;
 import java.util.Set;
 
 /**
- * A bean definition scanner that detects bean candidates on the classpath,
- * registering corresponding bean definitions with a given registry ({@code BeanFactory}
- * or {@code ApplicationContext}).
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 一个 Bean 定义扫描器，用于检测类路径上的 Bean 候选者，
+ * 向给定的注册表（{@code BeanFactory} 注册相应的 Bean 定义或 {@code ApplicationContext}）。
  */
 public class ClassPathBeanDefinitionScanner extends ClassPathScanningCandidateComponentProvider {
 

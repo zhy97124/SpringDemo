@@ -4,7 +4,7 @@ import com.zhy.springframework.beans.BeansException;
 import com.zhy.springframework.beans.factory.config.BeanDefinition;
 
 /**
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * Bean定义的注册
  */
 public interface BeanDefinitionRegistry {
 

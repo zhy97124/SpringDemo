@@ -4,17 +4,7 @@ import com.zhy.springframework.beans.BeansException;
 import com.zhy.springframework.beans.factory.ConfigurableListableBeanFactory;
 
 /**
- * Allows for custom modification of an application context's bean definitions,
- * adapting the bean property values of the context's underlying bean factory.
- *
  * 允许自定义修改 BeanDefinition 属性信息
- *
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
  */
 public interface BeanFactoryPostProcessor {
 

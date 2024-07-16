@@ -2,9 +2,6 @@ package com.zhy.springframework.test.bean;
 
 import java.util.Random;
 
-/**
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
- */
 public class UserService implements IUserService {
 
     private String token;
@@ -15,7 +12,7 @@ public class UserService implements IUserService {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        return "小傅哥，100001，深圳，" + token;
+        return "张三，100001，深圳，" + token;
     }
 
     public String register(String userName) {

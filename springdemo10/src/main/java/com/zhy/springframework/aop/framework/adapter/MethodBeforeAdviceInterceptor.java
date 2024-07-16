@@ -5,9 +5,7 @@ import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 
 /**
- * Interceptor to wrap am {@link MethodBeforeAdvice}.
- * Used internally by the AOP framework; application developers should not need
- * to use this class directly.
+ * 由 AOP 框架内部使用,应用程序开发人员不需要直接使用此类。
  */
 public class MethodBeforeAdviceInterceptor implements MethodInterceptor {
 

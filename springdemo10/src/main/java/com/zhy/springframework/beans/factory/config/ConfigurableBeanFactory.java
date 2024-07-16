@@ -5,10 +5,8 @@ import com.zhy.springframework.util.StringValueResolver;
 import com.zhy.springframework.beans.factory.BeanFactory;
 
 /**
- * Configuration interface to be implemented by most bean factories. Provides
- * facilities to configure a bean factory, in addition to the bean factory
- * client methods in the {@link BeanFactory}
- * interface.
+ * 大多数 Bean 工厂要实现的配置接口。提供除了 Bean 工厂之外，还配置了 Bean 工厂的设施
+ * {@link BeanFactory} 中的客户端方法接口。
  */
 public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, SingletonBeanRegistry {
 

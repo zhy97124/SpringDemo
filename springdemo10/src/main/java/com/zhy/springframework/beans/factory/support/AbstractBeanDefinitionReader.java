@@ -4,15 +4,7 @@ import com.zhy.springframework.core.io.DefaultResourceLoader;
 import com.zhy.springframework.core.io.ResourceLoader;
 
 /**
- * Abstract base class for bean definition readers which implement
- * the {@link BeanDefinitionReader} interface.
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ *用于实现 Bean 定义读取器的抽象基类
  */
 public abstract class AbstractBeanDefinitionReader implements BeanDefinitionReader {
 

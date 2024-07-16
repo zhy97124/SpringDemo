@@ -7,16 +7,8 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Support base class for singleton registries which need to handle
- * {@link FactoryBean} instances,
- * integrated with {@link DefaultSingletonBeanRegistry}'s singleton management.
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 支持需要处理的单例注册表的基类
+ * {@link FactoryBean} 实例，与 {@link DefaultSingletonBeanRegistry} 的单例管理集成。
  */
 public abstract class FactoryBeanRegistrySupport extends DefaultSingletonBeanRegistry {
 

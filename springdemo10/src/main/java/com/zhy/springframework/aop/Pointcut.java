@@ -1,17 +1,9 @@
 package com.zhy.springframework.aop;
 
 /**
- * Core Spring pointcut abstraction.
- *
- * <p>A pointcut is composed of a {@link ClassFilter} and a {@link MethodMatcher}.
- * Both these basic terms and a Pointcut itself can be combined to build up combinations
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * 核心弹簧切入抽象
+ * 切入点由 {@link ClassFilter} 和 {@link MethodMatcher} 组成。
+ * 这些基本术语和 Pointcut 本身都可以组合起来构建组合
  */
 public interface Pointcut {
 

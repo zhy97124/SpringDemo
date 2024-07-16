@@ -20,14 +20,7 @@ import java.io.InputStream;
 import java.util.List;
 
 /**
- * Bean definition reader for XML bean definitions.
- * <p>
- *
- *
- *
- *
- *
- * 作者：DerekYRC https://github.com/DerekYRC/mini-spring
+ * XML Bean 定义的 Bean 定义读取器。
  */
 public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 
