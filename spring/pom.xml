@@ -17,7 +17,6 @@
 
     <name>spring</name>
 
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/aopalliance/aopalliance -->
         <dependency>
@@ -31,6 +30,7 @@
             <artifactId>aspectjweaver</artifactId>
             <version>1.9.7</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/cglib/cglib -->
         <dependency>
             <groupId>cglib</groupId>
@@ -41,12 +41,6 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>5.5.0</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.openjdk.jol/jol-cli -->
-        <dependency>
-            <groupId>org.openjdk.jol</groupId>
-            <artifactId>jol-cli</artifactId>
-            <version>0.14</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.dom4j/dom4j -->
         <dependency>
@@ -59,6 +53,12 @@
             <artifactId>junit</artifactId>
             <version>4.7</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

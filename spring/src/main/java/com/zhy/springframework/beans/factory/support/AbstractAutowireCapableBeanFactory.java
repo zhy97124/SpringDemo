@@ -2,11 +2,13 @@ package com.zhy.springframework.beans.factory.support;
 
 import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.core.util.TypeUtil;
 import com.zhy.springframework.beans.BeansException;
 import com.zhy.springframework.beans.PropertyValue;
 import com.zhy.springframework.beans.PropertyValues;
 import com.zhy.springframework.beans.factory.*;
 import com.zhy.springframework.beans.factory.config.*;
+import com.zhy.springframework.core.convert.ConversionService;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
@@ -171,22 +173,32 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
         try {
             PropertyValues propertyValues = beanDefinition.getPropertyValues();
             for (PropertyValue propertyValue : propertyValues.getPropertyValues()) {
-
                 String name = propertyValue.getName();
                 Object value = propertyValue.getValue();
-
                 if (value instanceof BeanReference) {
                     // A 依赖 B，获取 B 的实例化
                     BeanReference beanReference = (BeanReference) value;
                     value = getBean(beanReference.getBeanName());
                 }
-                // 属性填充
+                // 类型转换
+                else {
+                    Class<?> sourceType = value.getClass();
+                    Class<?> targetType = (Class<?>) TypeUtil.getFieldType(bean.getClass(), name);
+                    ConversionService conversionService = getConversionService();
+                    if (conversionService != null) {
+                        if (conversionService.canConvert(sourceType, targetType)) {
+                            value = conversionService.convert(value, targetType);
+                        }
+                    }
+                }
+                // 反射设置属性填充
                 BeanUtil.setFieldValue(bean, name, value);
             }
         } catch (Exception e) {
-            throw new BeansException("Error setting property values：" + beanName);
+            throw new BeansException("Error setting property values：" + beanName + " message：" + e);
         }
     }
+
 
     public InstantiationStrategy getInstantiationStrategy() {
         return instantiationStrategy;

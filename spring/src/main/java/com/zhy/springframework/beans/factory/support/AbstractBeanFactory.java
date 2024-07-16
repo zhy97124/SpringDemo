@@ -5,6 +5,7 @@ import com.zhy.springframework.beans.factory.FactoryBean;
 import com.zhy.springframework.beans.factory.config.BeanDefinition;
 import com.zhy.springframework.beans.factory.config.BeanPostProcessor;
 import com.zhy.springframework.beans.factory.config.ConfigurableBeanFactory;
+import com.zhy.springframework.core.convert.ConversionService;
 import com.zhy.springframework.util.ClassUtils;
 import com.zhy.springframework.util.StringValueResolver;
 
@@ -31,6 +32,8 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
      */
     private final List<StringValueResolver> embeddedValueResolvers = new ArrayList<>();
 
+    private ConversionService conversionService;
+
     @Override
     public Object getBean(String name) throws BeansException {
         return doGetBean(name, null);
@@ -45,6 +48,13 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
     public <T> T getBean(String name, Class<T> requiredType) throws BeansException {
         return (T) getBean(name);
     }
+
+    @Override
+    public boolean containsBean(String name) {
+        return containsBeanDefinition(name);
+    }
+
+    protected abstract boolean containsBeanDefinition(String beanName);
 
     protected <T> T doGetBean(final String name, final Object[] args) {
         Object sharedInstance = getSingleton(name);
@@ -95,6 +105,16 @@ public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport imp
             result = resolver.resolveStringValue(result);
         }
         return result;
+    }
+
+    @Override
+    public void setConversionService(ConversionService conversionService) {
+        this.conversionService = conversionService;
+    }
+
+    @Override
+    public ConversionService getConversionService() {
+        return conversionService;
     }
 
     /**

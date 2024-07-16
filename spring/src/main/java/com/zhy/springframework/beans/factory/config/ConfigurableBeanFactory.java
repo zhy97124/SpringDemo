@@ -1,8 +1,10 @@
 package com.zhy.springframework.beans.factory.config;
 
 import com.zhy.springframework.beans.factory.HierarchicalBeanFactory;
+import com.zhy.springframework.core.convert.ConversionService;
 import com.zhy.springframework.util.StringValueResolver;
 import com.zhy.springframework.beans.factory.BeanFactory;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * 大多数 Bean 工厂要实现的配置接口。提供除了 Bean 工厂之外，还配置了 Bean 工厂的设施
@@ -34,4 +36,9 @@ public interface ConfigurableBeanFactory extends HierarchicalBeanFactory, Single
      */
     String resolveEmbeddedValue(String value);
 
+    void setConversionService(ConversionService conversionService);
+
+
+    @Nullable
+    ConversionService getConversionService();
 }
